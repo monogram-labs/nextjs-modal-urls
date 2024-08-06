@@ -16,7 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+				{/* A portal where the modal will be rendered */}
+				<div id="modal-portal"/>
+				
+					{children}
+				</body>
     </html>
   );
 }
